@@ -13,5 +13,6 @@ class Program
 
         Console.WriteLine(x);
         Console.WriteLine("VAR ÄR KOMMENTARERNA?!?!?!!?!!?");
+        Console.WriteLine("Något annat än gorgonzola");
     }
 }
