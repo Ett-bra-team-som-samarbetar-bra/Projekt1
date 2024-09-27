@@ -15,7 +15,7 @@ class Program
 
         Console.WriteLine(x);
         Console.WriteLine("VAR ÄR KOMMENTARERNA?!?!?!!?!!?");
-        branchViktor
+        x = 10;
         Console.WriteLine("Något annat än gorgonzola");
 
         Console.WriteLine("Gorgonzola");
