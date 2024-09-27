@@ -10,5 +10,8 @@ class Program
     {
 
         int x = 10;
+
+        Console.WriteLine(x);
+        Console.WriteLine("VAR ÄR KOMMENTARERNA?!?!?!!?!!?");
     }
 }
