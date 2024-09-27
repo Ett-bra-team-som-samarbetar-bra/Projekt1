@@ -10,7 +10,7 @@ class Program
     // Entry point va
     static void Main()
     {
-        string jocke = "jocke";
+        string jocke = "jocke"; // Mitt namn 
 
     }
 }
