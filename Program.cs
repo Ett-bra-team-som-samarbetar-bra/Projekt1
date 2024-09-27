@@ -1,7 +1,4 @@
-﻿
-using System;
-
-namespace Projekt1;
+﻿namespace Projekt1;
 
 class Program
 {
@@ -10,7 +7,7 @@ class Program
     // Entry point va
     static void Main()
     {
-
+        string jocke = "jocke";
 
     }
 }
