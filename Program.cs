@@ -9,6 +9,8 @@ class Program
     static void Main()
     {
 
+        Console.WriteLine("Jesper take over VA");
+
         int x = 10;
 
         Console.WriteLine(x);
@@ -17,6 +19,5 @@ class Program
         Console.WriteLine("Något annat än gorgonzola");
 
         Console.WriteLine("Gorgonzola");
-        main
     }
 }
