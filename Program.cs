@@ -13,6 +13,10 @@ class Program
 
         Console.WriteLine(x);
         Console.WriteLine("VAR ÄR KOMMENTARERNA?!?!?!!?!!?");
+        branchViktor
         Console.WriteLine("Något annat än gorgonzola");
+
+        Console.WriteLine("Gorgonzola");
+        main
     }
 }
