@@ -21,5 +21,6 @@ class Program
         Console.WriteLine("Gorgonzola");
 
         Console.WriteLine("Adda nåt bara");
+        Console.WriteLine("testar bara massor va ");
     }
 }
