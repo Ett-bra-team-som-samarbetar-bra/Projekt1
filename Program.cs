@@ -8,7 +8,7 @@ class Program
     // Entry point va
     static void Main()
     {
-        
+
 
     }
 }
