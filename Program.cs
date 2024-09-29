@@ -29,15 +29,24 @@ class Program
             case 2:
                 Console.WriteLine("Random Love Poem: ");
                 break;
-
         }
     }
 
     public static void InsultGenerator()
     {
         theGenerator.GenerateInsult();
+
+        Console.WriteLine(x);
+        Console.WriteLine("VAR ÄR KOMMENTARERNA?!?!?!!?!!?");
+  
+        Console.WriteLine("Något annat än gorgonzola");
+
+        Console.WriteLine("Gorgonzola");
+
+        Console.WriteLine("Adda nåt bara");
+        Console.WriteLine("testar bara massor va ");
+
     }
     //Add more methods
-    
 
 }
