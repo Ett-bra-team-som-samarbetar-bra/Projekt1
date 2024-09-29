@@ -8,13 +8,15 @@ namespace Projekt1
 {
     public class TheGenerator
     {
+        private Random random = new();
+
         public void GenerateInsult()
         {
-            int i = random.Next(0, insults.Count);
+            int i = random.Next(0, insults.Count); //takes a random string from the list of insults.
             string randomWord = insults[i];
             Console.WriteLine("Here's yer daily insult: " + randomWord);
-
         }
+
         public void GenerateMotivationalspeech()
         {
             // fill out
@@ -24,8 +26,6 @@ namespace Projekt1
             // fill out
         }
 
-
-        private Random random = new();
         private List<string> insults =
             [
             "I'd agree with you, but then we'd both be wrong.",

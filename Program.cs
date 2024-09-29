@@ -15,8 +15,7 @@ class Program
     public static void Generator()
     {
         Random random = new Random();
-        // Randomly pick which category to use: 0 for insults, 1 for motivation, 2 for love poems
-        int randomPick = random.Next(0, 3);
+        int randomPick = random.Next(0, 3); 
 
         switch (randomPick)
         {
@@ -35,8 +34,6 @@ class Program
     public static void InsultGenerator()
     {
         theGenerator.GenerateInsult();
-
-
     }
     //Add more methods
 
