@@ -9,6 +9,7 @@ class Program
     public static TheGenerator theGenerator = new();
     static void Main(string[] args)
     {
+        
         Generator();
         FeelsMethod();
     }
@@ -28,6 +29,9 @@ class Program
                 break;
             case 2:
                 Console.WriteLine("Random Love Poem: ");
+                break;
+            case 3:
+                TheGenerator.Hamster();
                 break;
         }
     }

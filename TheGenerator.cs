@@ -28,6 +28,11 @@ namespace Projekt1
             // fill out
         }
 
+        public static void Hamster()
+        {
+            Console.WriteLine(" .     .\r\n            (>\\---/<)\r\n            ,'     `.\r\n           /  q   p  \\\r\n          (  >(_Y_)<  )\r\n           >-' `-' `-<-.\r\n          /  _.== ,=.,- \\\r\n         /,    )`  '(    )\r\n        ; `._.'      `--<\r\n       :     \\        |  )\r\n       \\      )       ;_/  hjw\r\n        `._ _/_  ___.'-\\\\\\\r\n           `--\\\\\\");
+        }
+
         private List<string> insults =
             [
             "I'd agree with you, but then we'd both be wrong.",
