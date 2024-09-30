@@ -50,6 +50,10 @@ class Program
                 Console.WriteLine("Oh really? We will see about that");
                 TheGenerator.GenerateInsult();
             }
+            else if (feelNumber == 10)
+            {
+                Rainbow.Run();
+            }
             else
             {
                 Console.WriteLine("Perfectly lagom, as all things should be...");
