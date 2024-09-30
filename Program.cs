@@ -23,12 +23,17 @@ class Program
                 InsultGenerator();
                 break;
             case 1:
-                Console.WriteLine("Random Motivation: ");
+                GenerateMotivationalSpeech();
                 break;
             case 2:
                 Console.WriteLine("Random Love Poem: ");
                 break;
         }
+    }
+
+    public static void GenerateMotivationalSpeech()
+    {
+        theGenerator.GenerateMotivationalspeech();
     }
 
     public static void InsultGenerator()

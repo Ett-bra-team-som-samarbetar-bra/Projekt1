@@ -19,7 +19,9 @@ namespace Projekt1
 
         public void GenerateMotivationalspeech()
         {
-            // fill out
+            int i = random.Next(0, motivationalspeeches.Count);
+            string randomMotivationalSpeech = motivationalspeeches[i];
+            Console.WriteLine("Here is the daily motivational speech: " + randomMotivationalSpeech);
         }
         public void GenerateSpanishLovePoem()
         {
@@ -38,6 +40,20 @@ namespace Projekt1
             "You're as useless as the 'ueue' in 'queue'.",
             "Your secrets are always safe with me. I never even listen when you tell me them.",
             "You have the right to remain silent because whatever you say will probably be stupid."
+            ];
+
+        private List<string> motivationalspeeches =
+            [
+            "It takes courage to grow up and become who you really are.",
+            "Nothing is impossible. The word itself says 'I'm possible!'",
+            "Keep your face always toward the sunshine, and shadows will fall behind you.",
+            "Attitude is a little thing that makes a big difference.",
+            "To bring about change, you must not be afraid to take the first step. We will fail when we fail to try.",
+            "All our dreams can come true, if we have the courage to pursue them.",
+            "Don't sit down and wait for the opportunities to come. Get up and make them.",
+            "It is during our darkest moments that we must focus to see the light.",
+            "Believe you can and you're halfway there.",
+            "All dreams are within reach. All you have to do is keep moving towards them."
             ];
     }
 }
