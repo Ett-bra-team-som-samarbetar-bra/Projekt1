@@ -26,7 +26,7 @@ namespace Projekt1
 
         public static void Hamster()
         {
-            Console.WriteLine(" .     .\r\n            (>\\---/<)\r\n            ,'     `.\r\n           /  q   p  \\\r\n          (  >(_Y_)<  )\r\n           >-' `-' `-<-.\r\n          /  _.== ,=.,- \\\r\n         /,    )`  '(    )\r\n        ; `._.'      `--<\r\n       :     \\        |  )\r\n       \\      )       ;_/  hjw\r\n        `._ _/_  ___.'-\\\\\\\r\n           `--\\\\\\");
+            Console.WriteLine(" \n             .     .\r\n            (>\\---/<)\r\n            ,'     `.\r\n           /  q   p  \\\r\n          (  >(_Y_)<  )\r\n           >-' `-' `-<-.\r\n          /  _.== ,=.,- \\\r\n         /,    )`  '(    )\r\n        ; `._.'      `--<\r\n       :     \\        |  )\r\n       \\      )       ;_/  hjw\r\n        `._ _/_  ___.'-\\\\\\\r\n           `--\\\\\\");
         }
 
         private static List<string> insults =

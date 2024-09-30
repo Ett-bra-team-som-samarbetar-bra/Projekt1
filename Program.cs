@@ -16,7 +16,7 @@ class Program
 
     public static void Generator()
     {
-        int randomPick = TheGenerator.random.Next(0, 4);
+        int randomPick = TheGenerator.random.Next(0, 5);
 
         switch (randomPick)
         {
@@ -32,6 +32,12 @@ class Program
             case 3:
                 Rainbow.Run();
                 break;
+            case 4:
+                SweetChildOfMine.Run();
+                break;
+            default:
+                Console.WriteLine("That doenst exist... yet ;)");
+                break;
         }
     }
 
@@ -45,14 +51,14 @@ class Program
                 Console.WriteLine("Here, it sounds like you need a pick-me-up.");
                 TheGenerator.GenerateMotivationalspeech();
             }
+            else if (feelNumber == 10)
+            {
+                Rainbow.Run();
+            }
             else if (feelNumber > 5)
             {
                 Console.WriteLine("Oh really? We will see about that");
                 TheGenerator.GenerateInsult();
-            }
-            else if (feelNumber == 10)
-            {
-                Rainbow.Run();
             }
             else
             {
