@@ -9,7 +9,6 @@ class Program
     public static TheGenerator theGenerator = new();
     static void Main(string[] args)
     {
-        
         Generator();
         FeelsMethod();
     }

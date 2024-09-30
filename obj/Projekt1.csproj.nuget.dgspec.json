@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jw\\Documents\\Projekt1\\Projekt1.csproj": {}
+    "C:\\Users\\jw\\Desktop\\TEST2\\Projekt1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jw\\Documents\\Projekt1\\Projekt1.csproj": {
+    "C:\\Users\\jw\\Desktop\\TEST2\\Projekt1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jw\\Documents\\Projekt1\\Projekt1.csproj",
+        "projectUniqueName": "C:\\Users\\jw\\Desktop\\TEST2\\Projekt1.csproj",
         "projectName": "Projekt1",
-        "projectPath": "C:\\Users\\jw\\Documents\\Projekt1\\Projekt1.csproj",
+        "projectPath": "C:\\Users\\jw\\Desktop\\TEST2\\Projekt1.csproj",
         "packagesPath": "C:\\Users\\jw\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jw\\Documents\\Projekt1\\obj\\",
+        "outputPath": "C:\\Users\\jw\\Desktop\\TEST2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jw\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jw\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
