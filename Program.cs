@@ -10,6 +10,7 @@ class Program
     static void Main(string[] args)
     {
         Generator();
+        FeelsMethod();
     }
 
     public static void Generator()
@@ -40,6 +41,29 @@ class Program
     {
         theGenerator.GenerateInsult();
     }
+
+    public static void FeelsMethod()
+    {
+        Console.WriteLine("On a scale from 1-10, how would you describe you feeling right now?");
+        int feelNumber = Convert.ToInt32(Console.ReadLine());
+
+        if (feelNumber < 5)
+        {
+            Console.WriteLine("Here, it sounds like you need a pick-me-up.");
+            GenerateMotivationalSpeech();
+        }
+        else if (feelNumber > 5)
+        {
+            Console.WriteLine("Oh really? We will see about that");
+            InsultGenerator();
+        }
+        else
+        {
+            Console.WriteLine("Perfectly lagom, as all things should be..."); 
+        }
+
+    }
+
     //Add more methods
 
 }
