@@ -16,7 +16,7 @@ class Program
     public static void Generator()
     {
         Random random = new Random();
-        int randomPick = random.Next(0, 3); 
+        int randomPick = random.Next(0, 3);
 
         switch (randomPick)
         {
@@ -44,24 +44,31 @@ class Program
 
     public static void FeelsMethod()
     {
-        Console.WriteLine("On a scale from 1-10, how would you describe you feeling right now?");
-        int feelNumber = Convert.ToInt32(Console.ReadLine());
 
-        if (feelNumber < 5)
+        Console.WriteLine("On a scale from 1-10, how would you describe you feeling right now?");
+        if (int.TryParse(Console.ReadLine(), out int feelNumber))
         {
-            Console.WriteLine("Here, it sounds like you need a pick-me-up.");
-            GenerateMotivationalSpeech();
-        }
-        else if (feelNumber > 5)
-        {
-            Console.WriteLine("Oh really? We will see about that");
-            InsultGenerator();
+
+            if (feelNumber < 5)
+            {
+                Console.WriteLine("Here, it sounds like you need a pick-me-up.");
+                GenerateMotivationalSpeech();
+            }
+            else if (feelNumber > 5)
+            {
+                Console.WriteLine("Oh really? We will see about that");
+                InsultGenerator();
+            }
+            else
+            {
+                Console.WriteLine("Perfectly lagom, as all things should be...");
+            }
         }
         else
         {
-            Console.WriteLine("Perfectly lagom, as all things should be..."); 
+            Console.WriteLine("Thats not an integer, is it?");
         }
-
+        Console.ReadKey();
     }
 
     //Add more methods
