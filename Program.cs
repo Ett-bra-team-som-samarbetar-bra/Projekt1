@@ -16,7 +16,7 @@ class Program
     public static void Generator()
     {
         Random random = new Random();
-        int randomPick = random.Next(0, 3);
+        int randomPick = random.Next(0, 5);
 
         switch (randomPick)
         {
@@ -31,6 +31,9 @@ class Program
                 break;
             case 3:
                 TheGenerator.Hamster();
+                break;
+            case 4:
+                Rainbow.Run();
                 break;
         }
     }
