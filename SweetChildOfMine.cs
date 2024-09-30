@@ -1,7 +1,7 @@
 ﻿
 namespace Projekt1
 {
-    internal class SweetChildOfMine
+    internal class SweetChildOfMine //class that is able to play intro to Sweet child 'o mine
     {
         static int[] DO = new int[] { 131, 262, 523, 1046 };
 
@@ -17,7 +17,7 @@ namespace Projekt1
 
         static int[] TI = new int[] { 247, 494, 988, 1976 };
 
-        internal static void Run()
+        internal static void Run() //run method that plays the melody
         {
             int oct1 = 0;
 

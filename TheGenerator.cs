@@ -24,7 +24,7 @@ namespace Projekt1
             Console.WriteLine("Here is the daily motivational speech: " + randomMotivationalSpeech);
         }
 
-        public static void Hamster()
+        public static void Hamster()  // prints cool hamster
         {
             Console.WriteLine(" \n             .     .\r\n            (>\\---/<)\r\n            ,'     `.\r\n           /  q   p  \\\r\n          (  >(_Y_)<  )\r\n           >-' `-' `-<-.\r\n          /  _.== ,=.,- \\\r\n         /,    )`  '(    )\r\n        ; `._.'      `--<\r\n       :     \\        |  )\r\n       \\      )       ;_/  hjw\r\n        `._ _/_  ___.'-\\\\\\\r\n           `--\\\\\\");
         }
