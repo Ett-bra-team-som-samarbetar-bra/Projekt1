@@ -11,59 +11,44 @@ class Program
     {
         Generator();
         FeelsMethod();
+        Console.ReadKey();
     }
 
     public static void Generator()
     {
-        Random random = new Random();
-        int randomPick = random.Next(0, 5);
+        int randomPick = TheGenerator.random.Next(0, 4);
 
         switch (randomPick)
         {
             case 0:
-                InsultGenerator();
+                TheGenerator.GenerateInsult();
                 break;
             case 1:
-                GenerateMotivationalSpeech();
+                TheGenerator.GenerateMotivationalspeech();
                 break;
             case 2:
-                Console.WriteLine("Random Love Poem: ");
-                break;
-            case 3:
                 TheGenerator.Hamster();
                 break;
-            case 4:
+            case 3:
                 Rainbow.Run();
                 break;
         }
     }
 
-    public static void GenerateMotivationalSpeech()
-    {
-        theGenerator.GenerateMotivationalspeech();
-    }
-
-    public static void InsultGenerator()
-    {
-        theGenerator.GenerateInsult();
-    }
-
     public static void FeelsMethod()
     {
-
         Console.WriteLine("On a scale from 1-10, how would you describe you feeling right now?");
         if (int.TryParse(Console.ReadLine(), out int feelNumber))
         {
-
             if (feelNumber < 5)
             {
                 Console.WriteLine("Here, it sounds like you need a pick-me-up.");
-                GenerateMotivationalSpeech();
+                TheGenerator.GenerateMotivationalspeech();
             }
             else if (feelNumber > 5)
             {
                 Console.WriteLine("Oh really? We will see about that");
-                InsultGenerator();
+                TheGenerator.GenerateInsult();
             }
             else
             {
@@ -74,7 +59,6 @@ class Program
         {
             Console.WriteLine("Thats not an integer, is it?");
         }
-        Console.ReadKey();
     }
 
     //Add more methods

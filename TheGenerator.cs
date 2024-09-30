@@ -8,24 +8,20 @@ namespace Projekt1
 {
     public class TheGenerator
     {
-        private Random random = new();
+        public static Random random = new();
 
-        public void GenerateInsult()
+        public static void GenerateInsult()
         {
             int i = random.Next(0, insults.Count); //takes a random string from the list of insults.
             string randomWord = insults[i];
             Console.WriteLine("Here's yer daily insult: " + randomWord);
         }
 
-        public void GenerateMotivationalspeech()
+        public static void GenerateMotivationalspeech()
         {
             int i = random.Next(0, motivationalspeeches.Count);
             string randomMotivationalSpeech = motivationalspeeches[i];
             Console.WriteLine("Here is the daily motivational speech: " + randomMotivationalSpeech);
-        }
-        public void GenerateSpanishLovePoem()
-        {
-            // fill out
         }
 
         public static void Hamster()
@@ -33,7 +29,7 @@ namespace Projekt1
             Console.WriteLine(" .     .\r\n            (>\\---/<)\r\n            ,'     `.\r\n           /  q   p  \\\r\n          (  >(_Y_)<  )\r\n           >-' `-' `-<-.\r\n          /  _.== ,=.,- \\\r\n         /,    )`  '(    )\r\n        ; `._.'      `--<\r\n       :     \\        |  )\r\n       \\      )       ;_/  hjw\r\n        `._ _/_  ___.'-\\\\\\\r\n           `--\\\\\\");
         }
 
-        private List<string> insults =
+        private static List<string> insults =
             [
             "I'd agree with you, but then we'd both be wrong.",
             "You're like a cloud. When you disappear, it's a beautiful day.",
@@ -47,7 +43,7 @@ namespace Projekt1
             "You have the right to remain silent because whatever you say will probably be stupid."
             ];
 
-        private List<string> motivationalspeeches =
+        private static List<string> motivationalspeeches =
             [
             "It takes courage to grow up and become who you really are.",
             "Nothing is impossible. The word itself says 'I'm possible!'",
