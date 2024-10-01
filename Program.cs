@@ -10,11 +10,13 @@ class Program
     static void Main(string[] args)
     {
         GetUserName();
+        WizardCheck();
         Console.WriteLine("Good morning " + userName + "!");
         Generator(); // Starting the program by randomly selecting an event.
         FeelsMethod();
         Console.ReadKey();
     }
+
 
     public static void GetUserName()
     {
@@ -53,9 +55,6 @@ class Program
                 break;
             case 7:
                 MusicBox.Pirates();
-                break;
-            case 8:
-                WizardCheck();
                 break;
             default:
                 Console.WriteLine("That doenst exist... yet ;)");
