@@ -1,5 +1,6 @@
 ﻿
 using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Projekt1;
 
@@ -23,7 +24,7 @@ class Program
 
     public static void Generator()
     {
-        int randomPick = TheGenerator.random.Next(0, 8); // picking a random number from 0-8 to place in the switch statement
+        int randomPick = TheGenerator.random.Next(0, 9); // picking a random number from 0-8 to place in the switch statement
 
         switch (randomPick)
         {
@@ -53,9 +54,23 @@ class Program
             case 7:
                 MusicBox.Pirates();
                 break;
+            case 8:
+                WizardCheck();
+                break;
             default:
                 Console.WriteLine("That doenst exist... yet ;)");
                 break;
+        }
+    }
+
+    public static void WizardCheck()
+    {
+        if (userName.Equals("Harry"))
+        {
+            Console.WriteLine($"You're a wizard, {userName}");
+        }
+        else {
+            Console.WriteLine($"Sadly, you're not a wizard {userName}");
         }
     }
 
