@@ -1,5 +1,6 @@
 ﻿
 using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Projekt1;
 
@@ -9,11 +10,13 @@ class Program
     static void Main(string[] args)
     {
         GetUserName();
+        WizardCheck();
         Console.WriteLine("Good morning " + userName + "!");
         Generator(); // Starting the program by randomly selecting an event.
         FeelsMethod();
         Console.ReadKey();
     }
+
 
     public static void GetUserName()
     {
@@ -23,7 +26,7 @@ class Program
 
     public static void Generator()
     {
-        int randomPick = TheGenerator.random.Next(0, 8); // picking a random number from 0-8 to place in the switch statement
+        int randomPick = TheGenerator.random.Next(0, 9); // picking a random number from 0-8 to place in the switch statement
 
         switch (randomPick)
         {
@@ -56,6 +59,17 @@ class Program
             default:
                 Console.WriteLine("That doenst exist... yet ;)");
                 break;
+        }
+    }
+
+    public static void WizardCheck()
+    {
+        if (userName.Equals("Harry"))
+        {
+            Console.WriteLine($"You're a wizard, {userName}");
+        }
+        else {
+            Console.WriteLine($"Sadly, you're not a wizard {userName}");
         }
     }
 
