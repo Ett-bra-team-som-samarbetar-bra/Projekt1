@@ -27,7 +27,7 @@ namespace Projekt1
 
             int oct4 = 3;
 
-
+            Console.WriteLine("Now playing: Sweet Child O' Mine");
 
             Console.Beep(DO[oct3], 100);
 
