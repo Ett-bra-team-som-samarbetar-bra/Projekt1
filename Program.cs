@@ -16,7 +16,7 @@ class Program
 
     public static void Generator()
     {
-        int randomPick = TheGenerator.random.Next(0, 6);
+        int randomPick = TheGenerator.random.Next(0, 8);
 
         switch (randomPick)
         {
@@ -37,6 +37,12 @@ class Program
                 break;
             case 5:
                 InteractiveMenu.Start();
+                break;
+            case 6:
+                MusicBox.Blues();
+                break;
+            case 7:
+                MusicBox.Pirates();
                 break;
             default:
                 Console.WriteLine("That doenst exist... yet ;)");
