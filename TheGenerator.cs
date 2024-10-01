@@ -13,15 +13,15 @@ namespace Projekt1
         public static void GenerateInsult()
         {
             int i = random.Next(0, insults.Count); //takes a random string from the list of insults.
-            string randomWord = insults[i];
-            Console.WriteLine("Here's yer daily insult: " + randomWord);
+            string randomInsult = insults[i];
+            Console.WriteLine(randomInsult);
         }
 
         public static void GenerateMotivationalspeech()
         {
             int i = random.Next(0, motivationalspeeches.Count);
             string randomMotivationalSpeech = motivationalspeeches[i];
-            Console.WriteLine("Here is the daily motivational speech: " + randomMotivationalSpeech);
+            Console.WriteLine(randomMotivationalSpeech);
         }
 
         public static void Hamster()  // prints cool hamster

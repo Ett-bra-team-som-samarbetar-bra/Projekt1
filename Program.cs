@@ -5,25 +5,34 @@ namespace Projekt1;
 
 class Program
 {
-    // Entry point va
-    public static TheGenerator theGenerator = new();
+    public static string userName = "";
     static void Main(string[] args)
     {
-        Generator();
+        GetUserName();
+        Console.WriteLine("Good morning " + userName + "!");
+        Generator(); // Starting the program by randomly selecting an event.
         FeelsMethod();
         Console.ReadKey();
     }
 
+    public static void GetUserName()
+    {
+        Console.WriteLine("What's your name?");
+        userName = Console.ReadLine();
+    }
+
     public static void Generator()
     {
-        int randomPick = TheGenerator.random.Next(0, 8);
+        int randomPick = TheGenerator.random.Next(0, 8); // picking a random number from 0-8 to place in the switch statement
 
         switch (randomPick)
         {
             case 0:
+                Console.WriteLine($"Here's yer daily insult {userName}");
                 TheGenerator.GenerateInsult();
                 break;
             case 1:
+                Console.WriteLine($"Here's yer daily cheer-me-up {userName}");
                 TheGenerator.GenerateMotivationalspeech();
                 break;
             case 2:
@@ -52,7 +61,8 @@ class Program
 
     public static void FeelsMethod()
     {
-        Console.WriteLine("On a scale from 1-10, how would you describe you feeling right now?");
+         //Making sure the user is satisfied with the randomly generated event.
+        Console.WriteLine($"On a scale from 1-10, how would you describe you feeling right now {userName}?");
         if (int.TryParse(Console.ReadLine(), out int feelNumber))
         {
             if (feelNumber < 5)
