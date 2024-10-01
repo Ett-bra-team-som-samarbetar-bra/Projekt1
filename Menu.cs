@@ -81,6 +81,5 @@ namespace Projekt1
             
             return SelectedIndex;
         }
-
     }
 }

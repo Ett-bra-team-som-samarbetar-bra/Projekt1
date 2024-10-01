@@ -11,7 +11,6 @@ class Program
     {
         GetUserName();
         WizardCheck();
-        Console.WriteLine("Good morning " + userName + "!");
         Generator(); // Starting the program by randomly selecting an event.
         FeelsMethod();
         Console.ReadKey();
@@ -26,7 +25,7 @@ class Program
 
     public static void Generator()
     {
-        int randomPick = TheGenerator.random.Next(0, 9); // picking a random number from 0-8 to place in the switch statement
+        int randomPick = TheGenerator.random.Next(0, 8); // picking a random number from 0-8 to place in the switch statement
 
         switch (randomPick)
         {
@@ -57,7 +56,6 @@ class Program
                 MusicBox.Pirates();
                 break;
             default:
-                Console.WriteLine("That doenst exist... yet ;)");
                 break;
         }
     }
@@ -71,6 +69,8 @@ class Program
         else {
             Console.WriteLine($"Sadly, you're not a wizard {userName}");
         }
+
+        Console.WriteLine("Good morning " + userName + "!");
     }
 
     public static void FeelsMethod()

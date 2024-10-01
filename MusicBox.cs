@@ -16,6 +16,8 @@ namespace Projekt1
         
         public static void Blues()
         {   
+            Console.WriteLine("Now playing: Blues");
+
             int whole = 500;
             int half = whole / 2;        
             int quarter = whole / 4;
@@ -35,6 +37,8 @@ namespace Projekt1
 
         public static void Pirates()
         {   
+            Console.WriteLine("Now playing: Pirates");
+
             int whole = 800;
             int half = whole / 2;        
             int quarter = whole / 4;
