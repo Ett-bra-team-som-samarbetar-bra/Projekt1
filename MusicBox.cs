@@ -1,64 +1,101 @@
 
-namespace Projekt1
-{
-    public static class MusicBox 
-    {
-        // Notes
-        static int[] C = new int[] { 131, 262, 523};
-        static int[] D = new int[] { 147, 294, 587};
-        static int[] E = new int[] { 165, 330, 659};
-        static int[] F = new int[] { 175, 349, 698};
-        static int[] G = new int[] { 196, 392, 784};
-        static int[] A = new int[] { 220, 440, 880};
-        static int[] B = new int[] { 247, 494, 988};
-        static int[] Diss = new int[] { 155, 311, 622};
+using Projekt1;
 
+public class MusicBox : MusicBoxNotes
+{   
+    public void Blues()
+    {   
+        Console.WriteLine("Now playing: Blues");
+
+        Whole = 500;
+        Half = Whole / 2;        
+
+        Console.Beep(C[oct2], Half);
+        Console.Beep(Diss[oct2], Whole);
+        Console.Beep(F[oct2], Half);
+        Console.Beep(G[oct2], Whole);
+
+        Console.Beep(C[oct2], Half);
+        Console.Beep(Diss[oct2], Whole);
+        Console.Beep(F[oct2], Half);
+
+        Console.Beep(C[oct2], Whole);
+        Console.Beep(C[oct2], Whole);
+    }
+
+    public void Pirates()
+    {   
+        Console.WriteLine("Now playing: Pirates");
         
-        public static void Blues()
-        {   
-            Console.WriteLine("Now playing: Blues");
+        Whole = 800;
+        Half = Whole / 2;        
+        Quarter = Whole / 4;
 
-            int whole = 500;
-            int half = whole / 2;        
-            int quarter = whole / 4;
+        Console.Beep(A[oct1], Quarter);
+        Console.Beep(C[oct2], Quarter);
+        Console.Beep(D[oct2], Whole);
 
-            Console.Beep(C[2], half);
-            Console.Beep(Diss[2], whole);
-            Console.Beep(F[2], half);
-            Console.Beep(G[2], whole);
+        Console.Beep(D[oct2], Quarter);
+        Console.Beep(E[oct2], Quarter);
+        Console.Beep(F[oct2], Whole);
 
-            Console.Beep(C[2], half);
-            Console.Beep(Diss[2], whole);
-            Console.Beep(F[2], half);
+        Console.Beep(F[oct2], Quarter);
+        Console.Beep(G[oct2], Quarter);
+        Console.Beep(E[oct2], Half);
+        Console.Beep(E[oct2], Half);
 
-            Console.Beep(C[2], whole);
-            Console.Beep(C[2], whole);
+        Console.Beep(D[oct2], Quarter);
+        Console.Beep(C[oct2], Quarter);
+        Console.Beep(D[oct2], Whole);
+    }
+
+    public void SweetChildOfMine()
+    {
+        
+        for (int i = 0; i < 2; i++)
+        {
+            Console.Beep(G[oct2], 250);
+            Console.Beep(G[oct3], 250);
+            Console.Beep(D[oct3], 250);
+            Console.Beep(C[oct3], 250);
+            Console.Beep(C[oct4], 250);
+            Console.Beep(D[oct3], 250);
+            Console.Beep(B[oct3], 250);
+            Console.Beep(D[oct3], 250);
         }
 
-        public static void Pirates()
-        {   
-            Console.WriteLine("Now playing: Pirates");
-
-            int whole = 800;
-            int half = whole / 2;        
-            int quarter = whole / 4;
-
-            Console.Beep(A[1], quarter);
-            Console.Beep(C[2], quarter);
-            Console.Beep(D[2], whole);
-
-            Console.Beep(D[2], quarter);
-            Console.Beep(E[2], quarter);
-            Console.Beep(F[2], whole);
-
-            Console.Beep(F[2], quarter);
-            Console.Beep(G[2], quarter);
-            Console.Beep(E[2], half);
-            Console.Beep(E[2], half);
-
-            Console.Beep(D[2], quarter);
-            Console.Beep(C[2], quarter);
-            Console.Beep(D[2], whole);
+        for (int i = 0; i < 2; i++)
+        {
+            Console.Beep(A[oct2], 250);
+            Console.Beep(G[oct3], 250);
+            Console.Beep(D[oct3], 250);
+            Console.Beep(C[oct3], 250);
+            Console.Beep(C[oct4], 250);
+            Console.Beep(D[oct3], 250);
+            Console.Beep(B[oct3], 250);
+            Console.Beep(D[oct3], 250);
         }
+
+        for (int i = 0; i < 2; i++)
+        {
+            Console.Beep(C[oct3], 250);
+            Console.Beep(G[oct3], 250);
+            Console.Beep(D[oct3], 250);
+            Console.Beep(C[oct3], 250);
+            Console.Beep(C[oct4], 250);
+            Console.Beep(D[oct3], 250);
+            Console.Beep(B[oct3], 250);
+            Console.Beep(D[oct3], 250);
+        }
+
+        Console.Beep(G[oct2], 250);
+        Console.Beep(G[oct3], 250);
+        Console.Beep(D[oct3], 250);
+        Console.Beep(C[oct3], 250);
+        Console.Beep(C[oct4], 250);
+        Console.Beep(D[oct3], 250);
+        Console.Beep(B[oct3], 250);
+        Console.Beep(D[oct3], 250);
     }
 }
+
